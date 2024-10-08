@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UiMainClass</class>
+ <widget class="QWidget" name="UiMainClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>UiMain</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="BucketsWidget" name="widget_Bucket" native="true"/>
+     <widget class="QWidget" name="">
+      <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,1,0">
+       <item>
+        <widget class="ToolBarWidget" name="widget_Tools" native="true"/>
+       </item>
+       <item>
+        <widget class="BreadWidget" name="widget_Bread" native="true"/>
+       </item>
+       <item>
+        <widget class="ObjectsWidget" name="widget_Object" native="true"/>
+       </item>
+       <item>
+        <widget class="PageWidget" name="widget_Page" native="true"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BucketsWidget</class>
+   <extends>QWidget</extends>
+   <header>BucketsWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ToolBarWidget</class>
+   <extends>QWidget</extends>
+   <header>ToolBarWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BreadWidget</class>
+   <extends>QWidget</extends>
+   <header>../uicom/BreadWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ObjectsWidget</class>
+   <extends>QWidget</extends>
+   <header>ObjectsWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PageWidget</class>
+   <extends>QWidget</extends>
+   <header>../uicom/PageWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
