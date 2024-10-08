@@ -15,7 +15,7 @@ public:
 protected:
 	void mousePressEvent(QMouseEvent* event) override;
 	void mouseMoveEvent(QMouseEvent* event) override;
-
+	bool eventFilter(QObject* watched, QEvent* event) override;
 
 public slots:
 	//按下登录按键判断是否可以登录

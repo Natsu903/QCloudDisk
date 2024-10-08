@@ -90,6 +90,7 @@
     <ClCompile Include="src\fend\uimain\ObjectsWidget.cpp" />
     <ClCompile Include="src\fend\uimain\ToolBarWidget.cpp" />
     <ClCompile Include="src\fend\uimain\UiMain.cpp" />
+    <ClCompile Include="src\helper\FileHelper.cpp" />
     <QtRcc Include="QCloudDisk.qrc" />
     <ClCompile Include="main.cpp" />
     <QtUic Include="src\fend\uicom\BreadWidget.ui" />
@@ -120,6 +121,9 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="src\fend\uilogin\Login.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\helper\FileHelper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

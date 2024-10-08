@@ -24,5 +24,6 @@
         <file>static/imgs/Trans-1.png</file>
         <file>static/imgs/Trans-2.png</file>
         <file>static/imgs/upload.png</file>
+        <file>static/qss/default.qss</file>
     </qresource>
 </RCC>
