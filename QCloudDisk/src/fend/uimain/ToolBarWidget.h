@@ -11,6 +11,13 @@ public:
 	ToolBarWidget(QWidget *parent = nullptr);
 	~ToolBarWidget();
 
+signals:
+	void quitLogin();
+
+public slots:
+	void UploadFile();
+	void DownloadFile();
+
 private:
 	Ui::ToolBarWidgetClass ui;
 };

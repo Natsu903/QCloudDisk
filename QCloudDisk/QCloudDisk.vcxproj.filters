@@ -49,6 +49,9 @@
     <ClCompile Include="src\fend\uicom\PageWidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\fend\uilogin\Login.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="src\fend\uimain\UiMain.h">
@@ -69,6 +72,9 @@
     <QtMoc Include="src\fend\uicom\PageWidget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="src\fend\uilogin\Login.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="src\fend\uimain\UiMain.ui">
@@ -87,6 +93,9 @@
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="src\fend\uicom\PageWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\fend\uilogin\Login.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>

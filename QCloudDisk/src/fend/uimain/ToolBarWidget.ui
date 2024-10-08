@@ -121,5 +121,42 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>btn_Upload</sender>
+   <signal>clicked()</signal>
+   <receiver>ToolBarWidgetClass</receiver>
+   <slot>UploadFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>199</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>92</x>
+     <y>-27</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_Download</sender>
+   <signal>clicked()</signal>
+   <receiver>ToolBarWidgetClass</receiver>
+   <slot>DownloadFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>139</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>150</x>
+     <y>-13</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>UploadFile()</slot>
+  <slot>DownloadFile()</slot>
+ </slots>
 </ui>

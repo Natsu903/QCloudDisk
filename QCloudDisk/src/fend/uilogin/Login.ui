@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>QCloudDiskClass</class>
- <widget class="QDialog" name="QCloudDiskClass">
+ <class>LoginClass</class>
+ <widget class="QDialog" name="LoginClass">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
+    <width>432</width>
     <height>474</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>QCloudDisk</string>
+   <string>Login</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,1,0">
+  <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
     <widget class="QFrame" name="frame_Title">
      <property name="frameShape">
@@ -187,6 +187,9 @@
           <height>32</height>
          </size>
         </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
        </widget>
       </item>
       <item>
@@ -299,25 +302,42 @@
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources>
-  <include location="QCloudDisk_Login.qrc"/>
- </resources>
+ <resources/>
  <connections>
   <connection>
    <sender>btn_exit</sender>
    <signal>clicked()</signal>
-   <receiver>QCloudDiskClass</receiver>
+   <receiver>LoginClass</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>344</x>
-     <y>31</y>
+     <x>406</x>
+     <y>30</y>
     </hint>
     <hint type="destinationlabel">
-     <x>428</x>
+     <x>516</x>
      <y>36</y>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>btn_Login</sender>
+   <signal>clicked()</signal>
+   <receiver>LoginClass</receiver>
+   <slot>btnLogin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>223</x>
+     <y>404</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>237</x>
+     <y>506</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
+ <slots>
+  <slot>btnLogin()</slot>
+ </slots>
 </ui>
