@@ -1,8 +1,9 @@
 #pragma once
 #include <QObject>
-#include "../dao/DaoLoginInfo.h"
 #include "QList"
 #include "QStringList"
+#include "src/middle/DBModels.h"
+#include "../dao/dbs/DaoLoginInfoSqlite.h"
 class ManDB:public QObject
 {
 	Q_OBJECT
@@ -21,7 +22,7 @@ public:
 
 
 private:
-	DaoLoginInfo m_daoLoginInfo;
+	DaoLoginInfoSqlite m_daoLoginInfo;
 	QList<LoginInfo> m_loginInfoList;
 };
 

@@ -83,10 +83,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\bend\dao\DaoLoginInfo.cpp" />
+    <ClCompile Include="src\bend\dao\dbs\DaoLoginInfoSqlite.cpp" />
     <ClCompile Include="src\bend\man\ManDB.cpp" />
-    <ClCompile Include="src\bend\dao\DaoBuckets.cpp" />
-    <ClCompile Include="src\bend\man\ManBuckets.cpp" />
+    <ClCompile Include="src\bend\dao\clouds\DaoCloudsMock.cpp" />
+    <ClCompile Include="src\bend\man\ManClouds.cpp" />
     <ClCompile Include="src\fend\uicom\BreadWidget.cpp" />
     <ClCompile Include="src\fend\uicom\PageWidget.cpp" />
     <ClCompile Include="src\fend\uidelegates\BucketDelegate.cpp" />
@@ -130,11 +130,13 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="src\bend\man\ManDB.h" />
-    <ClInclude Include="src\bend\dao\DaoBuckets.h" />
-    <QtMoc Include="src\bend\man\ManBuckets.h" />
-    <ClInclude Include="src\bend\dao\DaoLoginInfo.h" />
-    <ClInclude Include="src\bend\models\DBModels.h" />
-    <ClInclude Include="src\bend\models\MyBucket.h" />
+    <ClInclude Include="src\bend\dao\clouds\DaoCloudsMock.h" />
+    <QtMoc Include="src\bend\man\ManClouds.h" />
+    <ClInclude Include="src\bend\dao\clouds\DaoClouds.h" />
+    <ClInclude Include="src\bend\dao\dbs\DaoLoginInfo.h" />
+    <ClInclude Include="src\bend\dao\dbs\DaoLoginInfoSqlite.h" />
+    <ClInclude Include="src\middle\DBModels.h" />
+    <ClInclude Include="src\middle\CloudModels.h" />
     <QtMoc Include="src\fend\uidelegates\BucketDelegate.h" />
     <ClInclude Include="src\config\config.h" />
     <ClInclude Include="src\helper\DBSqllite.h" />

@@ -55,10 +55,10 @@
     <ClCompile Include="src\helper\FileHelper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\bend\dao\DaoBuckets.cpp">
+    <ClCompile Include="src\bend\dao\clouds\DaoCloudsMock.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\bend\man\ManBuckets.cpp">
+    <ClCompile Include="src\bend\man\ManClouds.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\fend\uidelegates\BucketDelegate.cpp">
@@ -70,7 +70,7 @@
     <ClCompile Include="src\helper\DBSqllite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\bend\dao\DaoLoginInfo.cpp">
+    <ClCompile Include="src\bend\dao\dbs\DaoLoginInfoSqlite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -96,7 +96,7 @@
     <QtMoc Include="src\fend\uilogin\Login.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="src\bend\man\ManBuckets.h">
+    <QtMoc Include="src\bend\man\ManClouds.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="src\fend\uidelegates\BucketDelegate.h">
@@ -133,10 +133,10 @@
     <ClInclude Include="src\helper\FileHelper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\bend\models\MyBucket.h">
+    <ClInclude Include="src\middle\CloudModels.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\bend\dao\DaoBuckets.h">
+    <ClInclude Include="src\bend\dao\clouds\DaoCloudsMock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\config\config.h">
@@ -145,10 +145,16 @@
     <ClInclude Include="src\helper\DBSqllite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\bend\models\DBModels.h">
+    <ClInclude Include="src\middle\DBModels.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\bend\dao\DaoLoginInfo.h">
+    <ClInclude Include="src\bend\dao\dbs\DaoLoginInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bend\dao\clouds\DaoClouds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\bend\dao\dbs\DaoLoginInfoSqlite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

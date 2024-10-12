@@ -1,18 +1,18 @@
 #include "ObjectsWidget.h"
-#include "../../bend/man/ManBuckets.h"
 #include "../uidelegates/BucketDelegate.h"
+#include "src/bend/man/ManClouds.h"
 
 ObjectsWidget::ObjectsWidget(QWidget *parent)
 	: QWidget(parent)
 {
 	ui.setupUi(this);
-	ui.table_Object->setModel(ManBuckets::instance()->model());
+	ui.table_Object->setModel(ManClouds::instance()->model());
 
 	//设置第二列为combox操作
 	ui.table_Object->setItemDelegateForColumn(1, new BucketDelegate());
 
 	//设置表格水平标题内容
-	QStandardItemModel* model = ManBuckets::instance()->model();
+	QStandardItemModel* model = ManClouds::instance()->model();
 	QStringList labels;
 	labels << QString("名称")
 		<< QString("地区")

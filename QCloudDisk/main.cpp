@@ -1,8 +1,8 @@
 #include "./src/fend/uimain/UiMain.h"
 #include <QtWidgets/QApplication>
 #include "src/helper/FileHelper.h"
-#include "src/bend/man/ManBuckets.h"
 #include "src/bend/man/ManDB.h"
+#include "src/bend/man/ManClouds.h"
 
 int main(int argc, char *argv[])
 {
@@ -17,6 +17,6 @@ int main(int argc, char *argv[])
     UiMain w;
     w.showLoginDialog();
     //w.show();
-    ManBuckets::instance()->setBucket();
+    ManClouds::instance()->setBucket();
     return a.exec();
 }
