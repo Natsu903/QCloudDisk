@@ -2,6 +2,8 @@
 #include <QMessageBox>
 #include <QDebug>
 #include <QMouseEvent>
+#include "../../bend/man/ManDB.h"
+#include <QCompleter>
 
 Login::Login(QWidget *parent)
 	: QDialog(parent)
@@ -17,6 +19,7 @@ Login::Login(QWidget *parent)
 
 	//设置样式
 	ui.label_title->setProperty("style_font", "h3");
+	ui.label_Connect->setProperty("style_font", "h4");
 	ui.label_ID->setProperty("style_font", "h4");
 	ui.label_Key->setProperty("style_font", "h4");
 	ui.label_Remark->setProperty("style_font", "h4");
@@ -32,6 +35,17 @@ void Login::btnLogin()
 	if (ui.lineEdit_ID->text().trimmed() == "zhangsan" && ui.lineEdit_Key->text().trimmed() == "123")
 	{
 		emit accept();
+		if (ui.checkBox_Remember->isChecked())
+		{
+			//保存会话，保存登录信息
+			ManDB::instance()->saveLoginInfo(ui.lineEdit_Connect->text(), ui.lineEdit_ID->text(), ui.lineEdit_Key->text(), ui.lineEdit_Remark->text());
+		}
+		else
+		{
+			//删除登录信息
+			ManDB::instance()->removeLoginInfo(ui.lineEdit_ID->text());
+		}
+		updateLoginInfo();
 	}
 	else
 	{
@@ -41,6 +55,22 @@ void Login::btnLogin()
 
 Login::~Login()
 {}
+
+void Login::updateLoginInfo()
+{
+	QStringList words = ManDB::instance()->loginNameList();
+	QCompleter* completer = new QCompleter();
+	ui.lineEdit_Connect->setCompleter(completer);
+	connect(completer, static_cast<void (QCompleter::*)(const QString&)>(&QCompleter::activated), [&](const QString& name)
+		{
+			LoginInfo info = ManDB::instance()->getLoginInfoByName(name);
+			ui.lineEdit_ID->setText((info.secret_id));
+			ui.lineEdit_Key->setText((info.secret_key));
+			ui.lineEdit_Remark->setText((info.remark));
+			ui.checkBox_Remember->setChecked(true);
+		});
+	
+}
 
 void Login::mousePressEvent(QMouseEvent * e)
 {

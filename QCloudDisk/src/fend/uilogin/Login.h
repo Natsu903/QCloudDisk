@@ -11,6 +11,8 @@ public:
 	Login(QWidget *parent = nullptr);
 	~Login();
 
+	void updateLoginInfo();
+
 	//重写
 protected:
 	void mousePressEvent(QMouseEvent* event) override;
@@ -18,7 +20,7 @@ protected:
 	bool eventFilter(QObject* watched, QEvent* event) override;
 
 public slots:
-	//按下登录按键判断是否可以登录
+	//登录信息验证，连接数据库
 	void btnLogin();
 
 private:

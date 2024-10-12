@@ -25,5 +25,8 @@
         <file>static/imgs/Trans-2.png</file>
         <file>static/imgs/upload.png</file>
         <file>static/qss/default.qss</file>
+        <file>static/testing/business.json</file>
+        <file>static/testing/custom.json</file>
+        <file>static/sql/login_info.sql</file>
     </qresource>
 </RCC>

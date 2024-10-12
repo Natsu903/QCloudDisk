@@ -1,6 +1,10 @@
 #include "FileHelper.h"
 #include <QFile>
 #include <QDebug>
+#include <QJsonDocument>
+#include <QVariant>
+#include "QDir"
+#include <QRegularExpression>
 
 FileHelper::FileHelper()
 {
@@ -26,4 +30,25 @@ QString FileHelper::readAllText(const QString& filePath)
 	QByteArray data = file.readAll();
 	file.close();
 	return data;
+}
+
+QVariant FileHelper::readAllJson(const QString& filePath)
+{
+	QString data = FileHelper::readAllText(filePath);
+	QJsonDocument doc = QJsonDocument::fromJson(data.toLocal8Bit());
+	return doc.toVariant();
+}
+
+QString FileHelper::joinPath(const QString& path1, const QString& path2)
+{
+	QString path = path1 + "/" + path2;
+	QStringList pathList = path.split(QRegularExpression("[/\\\\]"), Qt::SkipEmptyParts);
+	path = pathList.join("/");
+	return QDir::cleanPath(path);
+}
+
+bool FileHelper::mkPath(const QString& path)
+{
+	QDir dir;
+	return dir.mkpath(path);
 }

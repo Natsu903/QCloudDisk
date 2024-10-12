@@ -7,7 +7,7 @@ UiMain::UiMain(QWidget *parent)
 {
 	ui.setupUi(this);
 	ui.splitter->setStretchFactor(0, 1);
-	ui.splitter->setStretchFactor(1, 4);
+	ui.splitter->setStretchFactor(1, 3);
 }
 
 UiMain::~UiMain()
@@ -24,6 +24,7 @@ void UiMain::showLoginDialog()
 	if (!m_loginDialog)
 	{
 		m_loginDialog = new Login();
+		m_loginDialog->updateLoginInfo();
 		connect(m_loginDialog, &Login::accepted, this, &UiMain::show);
 		connect(ui.widget_Tools, &ToolBarWidget::quitLogin, this, &UiMain::showLoginDialog);
 	}

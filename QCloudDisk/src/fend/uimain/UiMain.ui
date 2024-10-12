@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>400</height>
+    <width>852</width>
+    <height>575</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
       <enum>Qt::Horizontal</enum>
      </property>
      <widget class="BucketsWidget" name="widget_Bucket" native="true"/>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,1,0">
        <item>
         <widget class="ToolBarWidget" name="widget_Tools" native="true"/>

@@ -32,7 +32,7 @@
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
     <QtInstall>6.5.3_msvc2019_64</QtInstall>
-    <QtModules>core;gui;widgets</QtModules>
+    <QtModules>core;gui;widgets;sql</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
@@ -83,13 +83,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\bend\dao\DaoLoginInfo.cpp" />
+    <ClCompile Include="src\bend\man\ManDB.cpp" />
+    <ClCompile Include="src\bend\dao\DaoBuckets.cpp" />
+    <ClCompile Include="src\bend\man\ManBuckets.cpp" />
     <ClCompile Include="src\fend\uicom\BreadWidget.cpp" />
     <ClCompile Include="src\fend\uicom\PageWidget.cpp" />
+    <ClCompile Include="src\fend\uidelegates\BucketDelegate.cpp" />
     <ClCompile Include="src\fend\uilogin\Login.cpp" />
     <ClCompile Include="src\fend\uimain\BucketsWidget.cpp" />
     <ClCompile Include="src\fend\uimain\ObjectsWidget.cpp" />
     <ClCompile Include="src\fend\uimain\ToolBarWidget.cpp" />
     <ClCompile Include="src\fend\uimain\UiMain.cpp" />
+    <ClCompile Include="src\helper\DBSqllite.cpp" />
     <ClCompile Include="src\helper\FileHelper.cpp" />
     <QtRcc Include="QCloudDisk.qrc" />
     <ClCompile Include="main.cpp" />
@@ -123,6 +129,15 @@
     <QtMoc Include="src\fend\uilogin\Login.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="src\bend\man\ManDB.h" />
+    <ClInclude Include="src\bend\dao\DaoBuckets.h" />
+    <QtMoc Include="src\bend\man\ManBuckets.h" />
+    <ClInclude Include="src\bend\dao\DaoLoginInfo.h" />
+    <ClInclude Include="src\bend\models\DBModels.h" />
+    <ClInclude Include="src\bend\models\MyBucket.h" />
+    <QtMoc Include="src\fend\uidelegates\BucketDelegate.h" />
+    <ClInclude Include="src\config\config.h" />
+    <ClInclude Include="src\helper\DBSqllite.h" />
     <ClInclude Include="src\helper\FileHelper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
