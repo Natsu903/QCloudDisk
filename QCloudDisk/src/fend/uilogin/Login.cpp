@@ -59,7 +59,7 @@ Login::~Login()
 void Login::updateLoginInfo()
 {
 	QStringList words = ManDB::instance()->loginNameList();
-	QCompleter* completer = new QCompleter();
+	QCompleter* completer = new QCompleter(words);
 	ui.lineEdit_Connect->setCompleter(completer);
 	connect(completer, static_cast<void (QCompleter::*)(const QString&)>(&QCompleter::activated), [&](const QString& name)
 		{
@@ -69,7 +69,6 @@ void Login::updateLoginInfo()
 			ui.lineEdit_Remark->setText((info.remark));
 			ui.checkBox_Remember->setChecked(true);
 		});
-	
 }
 
 void Login::mousePressEvent(QMouseEvent * e)

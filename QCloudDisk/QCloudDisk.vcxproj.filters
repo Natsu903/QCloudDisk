@@ -73,6 +73,9 @@
     <ClCompile Include="src\bend\dao\dbs\DaoLoginInfoSqlite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="third\cos\third_party\include\openssl\applink.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="src\fend\uimain\UiMain.h">
@@ -155,6 +158,1857 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\bend\dao\dbs\DaoLoginInfoSqlite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\op\base_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\op\bucket_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\op\cos_result.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\op\file_copy_task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\op\file_download_task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\op\file_upload_task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\op\object_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\op\service_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\rapidxml\1.13\rapidxml.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\rapidxml\1.13\rapidxml_iterators.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\rapidxml\1.13\rapidxml_print.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\rapidxml\1.13\rapidxml_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\request\auditing_req.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\request\base_req.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\request\bucket_req.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\request\data_process_req.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\request\object_req.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\request\service_req.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\response\auditing_resp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\response\base_resp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\response\bucket_resp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\response\data_process_resp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\response\object_resp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\response\service_resp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\trsf\async_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\trsf\async_task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\trsf\transfer_handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\util\auth_tool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\util\codec_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\util\crc64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\util\file_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\util\http_sender.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\util\illegal_intercept.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\util\log_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\util\lru_cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\util\noncopyable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\util\retry_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\util\sha1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\util\simple_dns_cache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\util\string_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\util\test_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\cos_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\cos_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\cos_defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\cos_params.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\include\cos_sys_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\internal\gtest-death-test-internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\internal\gtest-filepath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\internal\gtest-internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\internal\gtest-linked_ptr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\internal\gtest-param-util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\internal\gtest-param-util-generated.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\internal\gtest-port.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\internal\gtest-string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\internal\gtest-tuple.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\internal\gtest-type-util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\gtest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\gtest_pred_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\gtest_prod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\gtest-death-test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\gtest-message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\gtest-param-test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\gtest-printers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\gtest-spi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\gtest-test-part.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\gtest\gtest-typed-test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\__DECC_INCLUDE_EPILOGUE.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\__DECC_INCLUDE_PROLOGUE.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\aes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\asn1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\asn1_mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\asn1err.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\asn1t.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\async.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\asyncerr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\bio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\bioerr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\blowfish.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\bn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\bnerr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\buffererr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\camellia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\cast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\cmac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\cms.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\cmserr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\comp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\comperr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\conf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\conf_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\conferr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\crypto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\cryptoerr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\ct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\cterr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\des.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\dh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\dherr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\dsa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\dsaerr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\dtls1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\e_os2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\ebcdic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\ec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\ecdh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\ecdsa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\ecerr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\engineerr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\err.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\evp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\evperr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\hmac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\idea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\kdf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\kdferr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\lhash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\md2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\md4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\mdc2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\modes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\obj_mac.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\objects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\objectserr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\ocsp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\ocsperr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\opensslconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\opensslv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\ossl_typ.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\pem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\pem2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\pemerr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\pkcs7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\pkcs7err.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\pkcs12.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\pkcs12err.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\rand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\rand_drbg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\randerr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\rc2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\rc4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\rc5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\ripemd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\rsa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\rsaerr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\safestack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\seed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\sha.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\srp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\srtp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\ssl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\ssl2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\ssl3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\sslerr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\store.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\storeerr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\symhacks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\tls1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\ts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\tserr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\txt_db.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\ui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\uierr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\whrlpool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\x509.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\x509_vfy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\x509err.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\x509v3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\openssl\x509v3err.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\Cipher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\CipherFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\CipherImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\CipherKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\CipherKeyImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\Crypto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\CryptoException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\CryptoStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\CryptoTransform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\DigestEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\ECDSADigestEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\ECKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\ECKeyImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\EVPPKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\KeyPair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\KeyPairImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\OpenSSLInitializer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\PKCS12Container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\RSACipherImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\RSADigestEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\RSAKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\RSAKeyImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Crypto\X509Certificate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\SQLite\Binder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\SQLite\Connector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\SQLite\Extractor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\SQLite\Notifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\SQLite\SessionImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\SQLite\SQLite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\SQLite\SQLiteException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\SQLite\SQLiteStatementImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\SQLite\Utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\AbstractBinder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\AbstractBinding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\AbstractExtraction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\AbstractExtractor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\AbstractPreparation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\AbstractPreparator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\AbstractSessionImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\ArchiveStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\AutoTransaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\Binding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\Bulk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\BulkBinding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\BulkExtraction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\Column.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\Connector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\Constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\Data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\DataException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\Date.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\DynamicDateTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\DynamicLOB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\Extraction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\Limit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\LOB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\LOBStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\MetaColumn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\PooledSessionHolder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\PooledSessionImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\Position.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\Preparation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\Range.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\RecordSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\Row.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\RowFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\RowFormatter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\RowIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\Session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\SessionFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\SessionImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\SessionPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\SessionPoolContainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\SimpleRowFormatter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\SQLChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\Statement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\StatementCreator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\StatementImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\Time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\Transaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Data\TypeHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Dynamic\Pair.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Dynamic\Struct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Dynamic\Var.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Dynamic\VarHolder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Dynamic\VarIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\JSON\Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\JSON\Handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\JSON\JSON.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\JSON\JSONException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\JSON\Object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\JSON\ParseHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\JSON\Parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\JSON\ParserImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\JSON\PrintHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\JSON\Query.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\JSON\Stringifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\JSON\Template.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\JSON\TemplateCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\AbstractHTTPRequestHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\AcceptCertificateHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\CertificateHandlerFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\CertificateHandlerFactoryMgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\ConsoleCertificateHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\Context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\DatagramSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\DatagramSocketImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\DialogSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\DNS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\EscapeHTMLStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\FilePartSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\FTPClientSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\FTPSClientSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\FTPSStreamFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\FTPStreamFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HostEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTMLForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPAuthenticationParams.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPBasicCredentials.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPBasicStreamBuf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPBufferAllocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPChunkedStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPClientSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPCookie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPCredentials.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPDigestCredentials.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPFixedLengthStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPHeaderStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPIOStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPMessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPNTLMCredentials.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPRequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPRequestHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPRequestHandlerFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPResponse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPSClientSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPServerConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPServerConnectionFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPServerParams.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPServerRequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPServerRequestImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPServerResponse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPServerResponseImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPServerSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPSessionFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPSessionInstantiator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPSSessionInstantiator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPSStreamFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\HTTPStreamFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\ICMPClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\ICMPEventArgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\ICMPPacket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\ICMPPacketImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\ICMPSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\ICMPSocketImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\ICMPv4PacketImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\InvalidCertificateHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\IPAddress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\IPAddressImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\KeyConsoleHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\KeyFileHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\MailMessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\MailRecipient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\MailStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\MediaType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\MessageHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\MulticastSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\MultipartReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\MultipartWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\MultiSocketPoller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\NameValueCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\Net.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\NetException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\NetSSL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\NetworkInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\NTLMCredentials.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\NTPClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\NTPEventArgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\NTPPacket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\NullPartHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\OAuth10Credentials.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\OAuth20Credentials.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\ParallelSocketAcceptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\ParallelSocketReactor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\PartHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\PartSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\PartStore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\PollSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\POP3ClientSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\PrivateKeyFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\PrivateKeyFactoryMgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\PrivateKeyPassphraseHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\QuotedPrintableDecoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\QuotedPrintableEncoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\RawSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\RawSocketImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\RejectCertificateHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\RemoteSyslogChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\RemoteSyslogListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SecureServerSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SecureServerSocketImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SecureSMTPClientSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SecureSocketImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SecureStreamSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SecureStreamSocketImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\ServerSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\ServerSocketImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\Session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SingleSocketPoller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SMTPChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SMTPClientSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\Socket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SocketAcceptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SocketAddress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SocketAddressImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SocketConnector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SocketDefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SocketImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SocketNotification.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SocketNotifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SocketReactor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SocketStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SSLException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SSLManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\SSPINTLMCredentials.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\StreamSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\StreamSocketImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\StringPartSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\TCPServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\TCPServerConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\TCPServerConnectionFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\TCPServerDispatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\TCPServerParams.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\UDPClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\UDPHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\UDPServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\UDPServerParams.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\UDPSocketReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\Utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\VerificationErrorArgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\WebSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\WebSocketImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Net\X509Certificate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\AbstractConfiguration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\ConfigurationMapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\ConfigurationView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\FilesystemConfiguration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\HelpFormatter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\IniFileConfiguration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\IntValidator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\JSONConfiguration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\LayeredConfiguration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\LoggingConfigurator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\LoggingSubsystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\MapConfiguration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\Option.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\OptionCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\OptionException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\OptionProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\OptionSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\PropertyFileConfiguration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\RegExpValidator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\ServerApplication.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\Subsystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\SystemConfiguration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\TimerTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\TimerTaskAdapter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\Units.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\Validator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\WinRegistryConfiguration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\WinRegistryKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\WinService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Util\XMLConfiguration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\AbstractCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\AbstractDelegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\AbstractEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\AbstractObserver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\AbstractPriorityDelegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\AbstractStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\AccessExpirationDecorator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\AccessExpireCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\AccessExpireLRUCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\AccessExpireStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\ActiveDispatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\ActiveMethod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\ActiveResult.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\ActiveRunnable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\ActiveStarter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Activity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Alignment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Any.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Ascii.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\AsyncChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\AtomicCounter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\AutoPtr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\AutoReleasePool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\BasicEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\BufferAllocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\BufferedBidirectionalStreamBuf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\BufferedStreamBuf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Bugcheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Checksum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\DataURIStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\DataURIStreamFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\DateTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\DateTimeFormat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\DateTimeFormatter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\DateTimeParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Debugger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\DefaultStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\DeflatingStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Delegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\DigestEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\DigestStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\DirectoryIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\DirectoryIterator_UNIX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\DirectoryIterator_WIN32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\DirectoryIterator_WIN32U.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\DirectoryIteratorStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Event_POSIX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Event_VX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Event_WIN32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\EventArgs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\EventChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\EventLogChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\FIFOBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\FIFOBufferStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\FIFOEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\FIFOStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\File.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\File_UNIX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\File_VX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\File_WIN32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\File_WIN32U.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\File_WINCE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\FileChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\FileStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\FileStream_POSIX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\FileStream_WIN32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\FileStreamFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Foundation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\FPEnvironment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\FPEnvironment_C99.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\FPEnvironment_DEC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\FPEnvironment_DUMMY.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\FPEnvironment_QNX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\FPEnvironment_SUN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\FPEnvironment_WIN32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\HMACEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\JSONString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\ListMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\LocalDateTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\MD4Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\MD5Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\MetaObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\MetaProgramming.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Mutex_POSIX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Mutex_WIN32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Mutex_WINCE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Notification.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\NotificationCenter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\NotificationQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\NotificationStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Nullable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\NullChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\NullStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\NumberFormatter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\NumberParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\NumericString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Path.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Path_UNIX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Path_WIN32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Path_WIN32U.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Path_WINCE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\PatternFormatter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Platform_POSIX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Platform_VX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Platform_WIN32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\RecursiveDirectoryIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\RecursiveDirectoryIteratorImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\RefCountedObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Runnable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\RunnableAdapter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\ScopedLock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\SHA1Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\SharedPtr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\SignalHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\SimpleFileChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\SimpleHashTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\SingletonHolder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\SortedDirectoryIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\StrategyCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\StreamChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\StreamConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\StreamCopier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\StreamTokenizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\StreamUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\String.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\StringTokenizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\TaskManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\TaskNotification.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\TextEncoding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Thread_POSIX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Thread_VX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Thread_WIN32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Thread_WINCE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\ThreadLocal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\ThreadPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\ThreadTarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Timespan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Timestamp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\TypeList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\Unicode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\UnicodeConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\UniqueAccessExpireCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\UniqueAccessExpireLRUCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\UniqueAccessExpireStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\UniqueExpireCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\UniqueExpireLRUCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\UniqueExpireStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\UnWindows.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\URI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\URIStreamFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\URIStreamOpener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\UTF8Encoding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\UTF8String.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\UTF16Encoding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\UTF32Encoding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third\cos\third_party\include\Poco\UTFString.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -14,6 +14,13 @@ public:
 	~UiMain();
 
 	void showLoginDialog();
+
+private slots:
+	void onButtonClicked(const QString& text);
+	void onUpload();
+	void onDownload();
+	void onRefresh();
+	void onUnLogin();
 	
 private:
 	Ui::UiMainClass ui;

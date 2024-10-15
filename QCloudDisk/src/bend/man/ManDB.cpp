@@ -31,7 +31,7 @@ void ManDB::saveLoginInfo(const QString& name, const QString& id, const QString&
 	if (m_daoLoginInfo.exists(info.secret_id))
 	{
 		m_daoLoginInfo.update(info);
-		m_loginInfoList[getIndexByLoginInfo(id)] = info;
+		m_loginInfoList[getIndexByLoginInfo(info.secret_id)] = info;
 	}
 	else
 	{

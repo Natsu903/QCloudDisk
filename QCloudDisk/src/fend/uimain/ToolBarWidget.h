@@ -12,11 +12,7 @@ public:
 	~ToolBarWidget();
 
 signals:
-	void quitLogin();
-
-public slots:
-	void UploadFile();
-	void DownloadFile();
+	void buttonClicked(const QString& text);
 
 private:
 	Ui::ToolBarWidgetClass ui;

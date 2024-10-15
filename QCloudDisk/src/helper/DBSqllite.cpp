@@ -49,7 +49,7 @@ QList<QMap<QString, QVariant>> DBSqllite::select(const QString& sql)
 	{
 		QMap<QString, QVariant> ret;
 		QSqlRecord record = query.record();
-		for (int i = 0; i < record.count(); i++)
+		for (int i = 0; i < record.count(); ++i)
 		{
 			QString name = record.fieldName(i);
 			QVariant value = record.value(i);
