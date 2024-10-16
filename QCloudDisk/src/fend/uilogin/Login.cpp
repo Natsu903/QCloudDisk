@@ -32,8 +32,8 @@ Login::Login(QWidget *parent)
 
 void Login::btnLogin()
 {
-	if (ui.lineEdit_ID->text().trimmed() == "zhangsan" && ui.lineEdit_Key->text().trimmed() == "123")
-	{
+	//if (ui.lineEdit_ID->text().trimmed() == "zhangsan" && ui.lineEdit_Key->text().trimmed() == "123")
+	//{
 		emit accept();
 		if (ui.checkBox_Remember->isChecked())
 		{
@@ -46,11 +46,11 @@ void Login::btnLogin()
 			ManDB::instance()->removeLoginInfo(ui.lineEdit_ID->text());
 		}
 		updateLoginInfo();
-	}
-	else
-	{
-		QMessageBox::warning(this, "登录失败", "账号(密码)输入错误");
-	}
+	//}
+	//else
+	//{
+	//	QMessageBox::warning(this, "登录失败", "账号(密码)输入错误");
+	//}
 }
 
 Login::~Login()
@@ -92,19 +92,19 @@ void Login::mouseMoveEvent(QMouseEvent* e)
 
 bool Login::eventFilter(QObject* watched, QEvent* event)
 {
-	if (watched == ui.lineEdit_Key)
-	{
-		if (event->type() == QEvent::KeyPress)
-		{
-			QKeyEvent* keyEvent = static_cast<QKeyEvent*>(event);
-			if (keyEvent->modifiers() == Qt::ControlModifier)
-			{
-				if (keyEvent->key() == Qt::Key_C || keyEvent->key() == Qt::Key_V)
-				{
-					return true;//返回true事件已经被处理不再往下传递
-				}
-			}
-		}
-	}
+	//if (watched == ui.lineEdit_Key)
+	//{
+	//	if (event->type() == QEvent::KeyPress)
+	//	{
+	//		QKeyEvent* keyEvent = static_cast<QKeyEvent*>(event);
+	//		if (keyEvent->modifiers() == Qt::ControlModifier)
+	//		{
+	//			if (keyEvent->key() == Qt::Key_C || keyEvent->key() == Qt::Key_V)
+	//			{
+	//				return true;//返回true事件已经被处理不再往下传递
+	//			}
+	//		}
+	//	}
+	//}
 	return QDialog::eventFilter(watched, event);
 }

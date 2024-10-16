@@ -1,7 +1,7 @@
 #include "ManClouds.h"
 #include <QDebug>
-#include "src/middle/CloudModels.h"
 #include "../dao/clouds/DaoCloudsMock.h"
+#include "../../plugins/manplugin.h"
 
 Q_GLOBAL_STATIC(ManClouds, ins)
 
@@ -14,6 +14,8 @@ ManClouds::ManClouds(QObject* parent)
 ManClouds::~ManClouds()
 {}
 
+
+
 ManClouds* ManClouds::instance()
 {
 	return ins();
@@ -21,7 +23,7 @@ ManClouds* ManClouds::instance()
 
 void ManClouds::setBucket()
 {
-	DaoCloudsMock* dao=new DaoCloudsMock(":/static/testing/business.json");
+	DaoClouds* dao = ManPlugin::instance()->clouds();
 	QList<MyBucket> buckets = dao->buckets();
 	m_model->setRowCount(buckets.size());
 	for (int i=0;i<buckets.size();i++)

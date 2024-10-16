@@ -2,7 +2,6 @@
 #include <QObject>
 #include "QList"
 #include "QStringList"
-#include "src/middle/DBModels.h"
 #include "../dao/dbs/DaoLoginInfoSqlite.h"
 class ManDB:public QObject
 {

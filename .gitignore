@@ -1,3 +1,5 @@
 /QCloudDisk/QCloudDisk
 /QCloudDisk/x64
 /QCloudDisk/.vs
+/QCloudDisk/static/cosconfig
+/QCloudDisk/static/sql/cos.db

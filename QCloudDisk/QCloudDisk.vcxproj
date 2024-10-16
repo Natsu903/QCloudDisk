@@ -37,7 +37,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
     <QtInstall>6.5.3_msvc2019_64</QtInstall>
-    <QtModules>core;gui;widgets</QtModules>
+    <QtModules>core;gui;widgets;sql</QtModules>
     <QtBuildConfig>release</QtBuildConfig>
   </PropertyGroup>
   <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
@@ -57,7 +57,17 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <IncludePath>.\third\cos\include;.\third\cos\third_party\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\third\cos\third_party\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>.\third\cos\libs\x64;.\third\cos\third_party\lib\x64\gtest;.\third\cos\third_party\lib\x64\openssl;.\third\cos\third_party\lib\x64\poco;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cossdk.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
     <ClCompile>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
@@ -78,11 +88,12 @@
       <Optimization>MaxSpeed</Optimization>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>false</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\bend\dao\clouds\DaoCloudsCos.cpp" />
     <ClCompile Include="src\bend\dao\dbs\DaoLoginInfoSqlite.cpp" />
     <ClCompile Include="src\bend\man\ManDB.cpp" />
     <ClCompile Include="src\bend\dao\clouds\DaoCloudsMock.cpp" />
@@ -97,6 +108,7 @@
     <ClCompile Include="src\fend\uimain\UiMain.cpp" />
     <ClCompile Include="src\helper\DBSqllite.cpp" />
     <ClCompile Include="src\helper\FileHelper.cpp" />
+    <ClCompile Include="src\plugins\ManPlugin.cpp" />
     <ClCompile Include="third\cos\third_party\include\openssl\applink.c" />
     <QtRcc Include="QCloudDisk.qrc" />
     <ClCompile Include="main.cpp" />
@@ -130,6 +142,8 @@
     <QtMoc Include="src\fend\uilogin\Login.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="src\plugins\ManPlugin.h" />
+    <ClInclude Include="src\bend\dao\clouds\DaoCloudsCos.h" />
     <ClInclude Include="third\cos\include\cos_api.h" />
     <ClInclude Include="third\cos\include\cos_config.h" />
     <ClInclude Include="third\cos\include\cos_defines.h" />
@@ -753,12 +767,15 @@
     <ClInclude Include="src\bend\dao\clouds\DaoClouds.h" />
     <ClInclude Include="src\bend\dao\dbs\DaoLoginInfo.h" />
     <ClInclude Include="src\bend\dao\dbs\DaoLoginInfoSqlite.h" />
-    <ClInclude Include="src\middle\DBModels.h" />
-    <ClInclude Include="src\middle\CloudModels.h" />
+    <ClInclude Include="src\middle\models\DBModels.h" />
+    <ClInclude Include="src\middle\models\CloudModels.h" />
     <QtMoc Include="src\fend\uidelegates\BucketDelegate.h" />
-    <ClInclude Include="src\config\config.h" />
+    <ClInclude Include="src\config\globals.h" />
     <ClInclude Include="src\helper\DBSqllite.h" />
     <ClInclude Include="src\helper\FileHelper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="static\cosconfig\cosconfig.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

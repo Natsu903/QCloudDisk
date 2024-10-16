@@ -1,15 +1,16 @@
 #pragma once
 #include "DaoClouds.h"
-#include <QJsonValue>
+#include "cos_api.h"
 
-
-class DaoCloudsMock:public DaoClouds
+class DaoCloudsCos :public DaoClouds
 {
 public:
-	DaoCloudsMock(const QString& path);
+	DaoCloudsCos();
+	~DaoCloudsCos();
 
 	QList<MyBucket> buckets() override;
 	QList<MyBucket> login(const QString& secretId, const QString& secretKey)override ;
+
 private:
-	QJsonValue m_mock;
+	qcloud_cos::CosConfig* m_config = nullptr;
 };

@@ -1,7 +1,7 @@
 #pragma once
 #include "QList"
-#include "src/middle/DBModels.h"
-#include "src/helper/DBSqllite.h"
+#include "../../../helper/DBSqllite.h"
+#include "../../../middle/models/DBModels.h"
 
 class DaoLoginInfo 
 {

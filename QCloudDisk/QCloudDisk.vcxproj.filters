@@ -76,6 +76,12 @@
     <ClCompile Include="third\cos\third_party\include\openssl\applink.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\plugins\ManPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bend\dao\clouds\DaoCloudsCos.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="src\fend\uimain\UiMain.h">
@@ -108,6 +114,9 @@
     <QtMoc Include="src\bend\man\ManDB.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="src\plugins\ManPlugin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="src\fend\uimain\UiMain.ui">
@@ -136,19 +145,19 @@
     <ClInclude Include="src\helper\FileHelper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\middle\CloudModels.h">
+    <ClInclude Include="src\middle\models\CloudModels.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\bend\dao\clouds\DaoCloudsMock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\config\config.h">
+    <ClInclude Include="src\config\globals.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\helper\DBSqllite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\middle\DBModels.h">
+    <ClInclude Include="src\middle\models\DBModels.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\bend\dao\dbs\DaoLoginInfo.h">
@@ -2011,5 +2020,11 @@
     <ClInclude Include="third\cos\third_party\include\Poco\UTFString.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\bend\dao\clouds\DaoCloudsCos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="static\cosconfig\cosconfig.json" />
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 #pragma once
 #include "QList"
-#include "src/middle/CloudModels.h"
+#include "../../../middle/models/CloudModels.h"
 
 class DaoClouds 
 {
@@ -9,4 +9,5 @@ public:
 	~DaoClouds() {};
 
 	virtual QList<MyBucket> buckets() = 0;
+	virtual QList<MyBucket> login(const QString& secretId, const QString& secretKey) = 0;
 };

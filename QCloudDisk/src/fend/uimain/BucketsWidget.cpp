@@ -1,5 +1,5 @@
 #include "BucketsWidget.h"
-#include "src/bend/man/ManClouds.h"
+#include "../../bend/man/ManClouds.h"
 
 BucketsWidget::BucketsWidget(QWidget *parent)
 	: QWidget(parent)

@@ -1,6 +1,6 @@
 #include "ObjectsWidget.h"
 #include "../uidelegates/BucketDelegate.h"
-#include "src/bend/man/ManClouds.h"
+#include "../../bend/man/ManClouds.h"
 
 ObjectsWidget::ObjectsWidget(QWidget *parent)
 	: QWidget(parent)
